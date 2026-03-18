@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Portfolio</title>
 
+<style>
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav{
+    background-color: #2563EB;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: yellow;
+}
+
+/* Hero Section */
+.hero{
+    text-align: center;
+    padding: 60px;
+    background-color: #E0E7FF;
+}
+
+.hero h1{
+    font-size: 40px;
+}
+
+.hero p{
+    font-size: 18px;
+}
+
+/* Section Styling */
+section{
+    padding: 40px;
+    text-align: center;
+}
+
+/* Skills */
+.skills ul{
+    list-style: none;
+    padding: 0;
+}
+
+.skills li{
+    background-color: #2563EB;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* Contact */
+.contact input, .contact textarea{
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #1E40AF;
+}
+
+/* Footer */
+footer{
+    background-color: #2563EB;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+<h1>Hi, I'm Simran Shaikh 👋</h1>
+<p>BCA Student | Web Developer Learner</p>
+</div>
+
+<!-- About -->
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am a passionate student learning web development. I love creating simple and beautiful websites.
+</p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="skills">
+<h2>My Skills</h2>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+<h2>Contact Me</h2>
+<form>
+<input type="text" placeholder="Your Name"><br>
+<input type="email" placeholder="Your Email"><br>
+<textarea placeholder="Your Message"></textarea><br>
+<button>Send</button>
+</form>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Simran Shaikh | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
