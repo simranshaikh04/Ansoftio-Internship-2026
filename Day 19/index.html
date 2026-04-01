@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+<title>To-Do App</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+/* Container */
+.container{
+    width: 300px;
+    margin: 80px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* Input */
+input{
+    padding: 10px;
+    width: 70%;
+}
+
+/* Add Button */
+.add-btn{
+    padding: 10px;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-btn:hover{
+    background-color: black;
+}
+
+/* List */
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    background-color: #e0e7ff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Delete Button */
+.delete-btn{
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delete-btn:hover{
+    background-color: darkred;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>To-Do List</h1>
+
+<input type="text" id="task" placeholder="Enter task">
+<button class="add-btn" onclick="addTask()">Add</button>
+
+<ul id="list"></ul>
+
+</div>
+
+<script>
+
+function addTask(){
+
+    let task = document.getElementById("task").value;
+
+    if(task === ""){
+        alert("Please enter a task");
+        return;
+    }
+
+    let li = document.createElement("li");
+
+    li.innerHTML = task + " <button class='delete-btn' onclick='this.parentElement.remove()'>Delete</button>";
+
+    document.getElementById("list").appendChild(li);
+
+    document.getElementById("task").value = "";
+
+}
+
+</script>
+
+</body>
+
+</html>
