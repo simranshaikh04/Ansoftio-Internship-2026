@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+<title>Registration Form</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+/* Form Container */
+.form-box{
+    background-color: white;
+    width: 300px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* Inputs */
+input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Submit Button */
+input[type="submit"]{
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background-color: black;
+}
+
+/* Heading */
+h1{
+    color: #2563EB;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h1>Register Here</h1>
+
+<form onsubmit="return validateForm()">
+
+<input type="text" id="name" placeholder="Enter Name"><br>
+
+<input type="text" id="email" placeholder="Enter Email"><br>
+
+<input type="password" id="password" placeholder="Enter Password"><br>
+
+<input type="submit" value="Register">
+
+</form>
+
+</div>
+
+<script>
+
+function validateForm(){
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if(name == ""){
+        alert("Name is required");
+        return false;
+    }
+
+    if(email.indexOf("@") == -1){
+        alert("Enter valid email");
+        return false;
+    }
+
+    if(password.length < 6){
+        alert("Password must be at least 6 characters");
+        return false;
+    }
+
+    alert("Registration Successful!");
+    return true;
+}
+
+</script>
+
+</body>
+
+</html>
