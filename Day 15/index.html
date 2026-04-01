@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html>  
 
+<head> 
+<title>JavaScript Task</title> 
+
+<style>
+body{
+    font-family: Arial;
+   
+    background-color: lightblue;
+}
+
+button{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+</style>
+
+</head> 
+ 
+<body> 
+ 
+<h1 id="heading">Welcome to JavaScript</h1> 
+ 
+<button onclick="changeText()">Click Me</button> 
+ 
+<script>  
+function changeText(){ 
+ 
+    alert("Button Clicked!"); 
+ 
+    document.getElementById("heading").innerHTML = "Hello Student"; 
+ 
+    console.log("Button was clicked"); 
+ 
+} 
+</script> 
+ 
+</body>  
+
+</html>
