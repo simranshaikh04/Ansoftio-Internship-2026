@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+<title>Product Store</title>
+
+<style>
+body{
+    font-family: Arial;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+/* Container */
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Product Card */
+.product{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Image */
+.product img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Button */
+button{
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: black;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Our Products</h1>
+
+<div class="container">
+
+    <div class="product">
+        <img src="https://m.media-amazon.com/images/I/41TacY79alL.jpg">
+        <h2>Smart Watch</h2>
+        <p>Track your fitness and health easily.</p>
+        <p>Price: ₹1999</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.50tZjSZRoZmltTSXcW_qeAHaIQ?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h2>Wireless Headphones</h2>
+        <p>Enjoy music with high-quality sound.</p>
+        <p>Price: ₹1499</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.oNPwqY9TUnK8WcNAYGPNrgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h2>Mobile Phone</h2>
+        <p>Latest smartphone with great features.</p>
+        <p>Price: ₹9999</p>
+        <button>Buy Now</button>
+    </div>
+
+</div>
+
+</body>
+
+</html>
