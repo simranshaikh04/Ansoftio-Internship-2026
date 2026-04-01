@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>DOM Task</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+/* Container */
+.container{
+    margin-top: 100px;
+}
+
+/* Input */
+input{
+    padding: 10px;
+    width: 200px;
+}
+
+/* Button */
+button{
+    padding: 10px 15px;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: black;
+}
+
+/* Heading */
+h1{
+    color: #2563EB;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 id="heading">Welcome Student</h1>
+
+<input type="text" id="name" placeholder="Enter your name">
+<br><br>
+
+<button onclick="updateName()">Update Name</button>
+
+</div>
+
+<script>
+
+function updateName(){
+
+    let username = document.getElementById("name").value;
+
+    if(username === ""){
+        alert("Please enter your name");
+    } else {
+        document.getElementById("heading").innerHTML = "Welcome " + username;
+    }
+
+}
+
+</script>
+
+</body>
+</html> 
 
